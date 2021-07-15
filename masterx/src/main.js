@@ -16,6 +16,7 @@ Vue.config.productionTip = false
 
 
 function genActiveRule(routerPrefix) {
+  console.log(location.pathname);
   return location => location.pathname.startsWith(routerPrefix);
 }
 
@@ -30,6 +31,8 @@ function render({ appContent, loading }) {
     }).$mount('#app');
     
   } else {
+    console.warn(appContent);
+    console.log(loading);
     store.commit('microApp/changeCenter', appContent);
     store.commit('microApp/changeLoading', loading);
   }

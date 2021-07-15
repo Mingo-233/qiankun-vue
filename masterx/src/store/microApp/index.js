@@ -13,6 +13,7 @@ export default {
   mutations: {
     changeCenter(state, params) {
       state.content = params;
+      console.log(params);
     },
     changeLoading(state, params) {
       state.mircoAppLoading = params;
