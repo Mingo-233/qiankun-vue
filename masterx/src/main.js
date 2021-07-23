@@ -54,6 +54,14 @@ let apps = [
     // render:renderUtil.render, 
     activeRule: genActiveRule('/star'),
     props:msg
+  },
+  {
+    name: 'viteDemo', 
+    entry: '//localhost:2000', 
+    container:'#subView', 
+    // render:renderUtil.render, 
+    activeRule: genActiveRule('/star'),
+    props:msg
   }
 ]
 
